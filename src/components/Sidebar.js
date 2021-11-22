@@ -1,11 +1,20 @@
-import React from 'react'
-import Links from '../constants/links'
-import Categories from '../components/Categories'
-import { IoMdClose } from 'react-icons/io'
+import React from "react"
+import Links from "../constants/links"
+import Categories from "../components/Categories"
+import { IoMdClose } from "react-icons/io"
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, setIsOpen }) => {
   return (
-    <h4>sidebar component</h4>
+    <aside className={`sidebar ${isOpen && "showSidebar"}`}>
+      <button className="close-btn" onClick={() => setIsOpen(false)}>
+        <IoMdClose />
+      </button>
+      <div className="sidebar-container">
+        <Links styleClass="sidebar-links">
+          <Categories />
+        </Links>
+      </div>
+    </aside>
   )
 }
 

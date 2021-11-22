@@ -1,0 +1,132 @@
+import { Link } from "gatsby"
+import { FiInfo } from "react-icons/fi"
+import { Counter, LikeButton, RegVideo, Video } from "../components/Complete"
+
+<section className="mdx-page">
+
+_I'm baby humblebrag neutra taiyaki af vice bespoke locavore fanny pack_ ramps vexillologist succulents. Normcore etsy pour-over adaptogen skateboard fashion axe, bushwick food truck beard lumbersexual master cleanse actually deep v. **Retro cardigan raw denim franzen kickstarter you probably haven't heard of them literally** aesthetic snackwave four dollar toast. Keffiyeh synth umami, helvetica yr flexitarian jean shorts banh mi cardigan leggings letterpress paleo intelligentsia narwhal.
+
+# Gatsby MDX
+
+### Random heading
+
+## More Examples
+
+```js
+const firstName = "john"
+const lastname = "smith"
+```
+
+<blockquote display="info">
+  Crucifix thundercats narwhal adaptogen small batch bespoke swag mixtape brunch
+  schlitz lomo vape freegan art party. Distillery stumptown taiyaki, hexagon
+  unicorn copper mug williamsburg mumblecore prism sriracha snackwave
+  intelligentsia tattooed heirloom. Unicorn slow-carb ethical synth hell of palo
+  santo everyday carry portland coloring book live-edge hexagon. Snackwave
+  ethical disrupt kinfolk irony live-edge. Tote bag af ennui williamsburg
+  dreamcatcher forage lumbersexual microdosing pug blue bottle. Slow-carb YOLO
+  before they sold out literally iceland mixtape williamsburg vegan umami 8-bit
+  direct trade.
+</blockquote>
+
+<h2>React components</h2>
+
+<Counter />
+<LikeButton />
+
+<h2>video components</h2>
+<RegVideo />
+<Video />
+<h2>regular heading</h2>
+<h2 title>title heading</h2>
+<h4 title>inline code</h4>
+
+`console.log('hello there')`
+
+<h4> blockquote element</h4>
+
+<blockquote display="default">
+  Crucifix thundercats narwhal adaptogen small batch bespoke swag mixtape brunch
+  schlitz lomo vape freegan art party.
+</blockquote>
+
+<blockquote display="info">
+  Crucifix thundercats narwhal adaptogen small batch bespoke swag mixtape brunch
+  schlitz lomo vape freegan art party.
+</blockquote>
+
+<blockquote display="warning">
+  Crucifix thundercats narwhal adaptogen small batch bespoke swag mixtape brunch
+  schlitz lomo vape freegan art party.
+</blockquote>
+
+<blockquote>
+  Crucifix thundercats narwhal adaptogen small batch bespoke swag mixtape brunch
+  schlitz lomo vape freegan art party. Distillery stumptown taiyaki, hexagon
+  unicorn copper mug williamsburg mumblecore prism sriracha snackwave
+  intelligentsia tattooed heirloom. Unicorn slow-carb ethical synth hell of palo
+  santo everyday carry portland coloring book live-edge hexagon. Snackwave
+</blockquote>
+
+#### Javascript
+
+```js
+// comments
+const name = "john"
+const channel = "coding addict"
+
+function featuredProducts(data) {
+  return data.filter(item => {
+    return item.featured === true
+  })
+}
+featuredProducts()
+```
+
+#### JSX
+
+```jsx
+import React from "react"
+
+const Counter = () => {
+  const [count, setCount] = React.useState(0)
+  return (
+    <section className="counter">
+      <h4>show some love to MDX</h4>
+      <h4>likes {count}</h4>
+      <button className="btn btn-danger" onClick={() => setCount(count + 1)}>
+        i like mdx
+      </button>
+    </section>
+  )
+}
+export default Counter
+```
+
+#### HTML
+
+```html
+<h1>hello world</h1>
+<p class="random">random text</p>
+<section class="contact">
+  <div class="title">
+    <h1>contact us</h1>
+  </div>
+</section>
+```
+
+#### CSS
+
+```css
+max-width: 500px;
+border-radius: var(--radius);
+padding: 1rem 1.5rem;
+background: var(--clr-grey-10);
+text-align: center;
+```
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
+
+</section>

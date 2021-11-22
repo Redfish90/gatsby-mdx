@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const RegVideo = () => {
   return (
     <RegVideoWrapper>
-      <video controls autoPlay muted loop>
+      <video autoPlay muted loop>
         <source src={video} type="video/mp4" />
       </video>
     </RegVideoWrapper>

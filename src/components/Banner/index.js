@@ -1,11 +1,16 @@
-import React from 'react'
-import styled from 'styled-components'
-import About from './About'
-import Recent from './Recent'
-import BannerCategories from './BannerCategories'
-const Banner = () => {
+import React from "react"
+import styled from "styled-components"
+import About from "./About"
+import Recent from "./Recent"
+import BannerCategories from "./BannerCategories"
+const Banner = ({ data }) => {
+  console.log(data)
   return (
-    <Wrapper>Banner</Wrapper>
+    <Wrapper>
+      <About />
+      <Recent />
+      <BannerCategories />
+    </Wrapper>
   )
 }
 

@@ -1,0 +1,57 @@
+---
+title: Gatsby Tutorial
+slug: gatsby-tutorial
+image: ./images/gatsby-1.png
+date: 2020-05-27
+author: john smith
+category: gatsby
+readTime: 34
+---
+
+import { Link } from "gatsby"
+import { FiInfo } from "react-icons/fi"
+import { Counter, LikeButton } from "../../components/Complete"
+
+
+## my first mdx file
+
+**Pour-over health goth cardigan, austin echo park cold-pressed pok pok. Ugh affogato banjo,
+biodiesel air plant slow-carb kickstarter whatever knausgaard locavore YOLO.**
+Tilde chia organic typewriter, vaporware keytar retro lyft ramps freegan.
+Wayfarers echo park coloring book woke listicle, readymade intelligentsia quinoa kinfolk
+flexitarian fashion axe butcher leggings. _8-bit selfies fam la croix._
+
+# my heading h1
+
+###### my heading h6
+
+<div className="code">
+
+```js
+const firstName = "john"
+const lastname = "smith"
+```
+
+</div>
+
+<div classname="nice-text">
+  <h3>nice text</h3>
+  <FiInfo className="nice-text-icon" />
+  Crucifix thundercats narwhal adaptogen small batch bespoke swag mixtape brunch
+  schlitz lomo vape freegan art party. Distillery stumptown taiyaki, hexagon
+  unicorn copper mug williamsburg mumblecore prism sriracha snackwave
+  intelligentsia tattooed heirloom. Unicorn slow-carb ethical synth hell of palo
+  santo everyday carry portland coloring book live-edge hexagon. Snackwave
+  ethical disrupt kinfolk irony live-edge. Tote bag af ennui williamsburg
+  dreamcatcher forage lumbersexual microdosing pug blue bottle. Slow-carb YOLO
+  before they sold out literally iceland mixtape williamsburg vegan umami 8-bit
+  direct trade.
+</div>
+
+<h2>React components</h2>
+
+<Counter />
+<LikeButton />
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
